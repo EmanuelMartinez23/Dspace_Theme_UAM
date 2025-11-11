@@ -1,0 +1,18 @@
+{
+  "apps": [
+    {
+      "name": "dspace-ui-dev",
+      "cwd": "/home/dspace/dspace-angular-dspace-9.1/",
+      "script": "yarn",
+      "args": "run start:dev",
+      "instances": 1,
+      "exec_mode": "fork",
+      "env": {
+        "NODE_ENV": "development",
+        "NODE_TLS_REJECT_UNAUTHORIZED": "0",
+        "NODE_OPTIONS": "--max-old-space-size=8192"
+      }
+    }
+  ]
+}
+
