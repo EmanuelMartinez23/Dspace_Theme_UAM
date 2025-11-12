@@ -46,3 +46,87 @@ footer, .ds-footer {
 // Enlaces
 a { color: $link-color; }
 a:hover { color: darken($link-color, 10%); }
+
+// ---------------------------
+// Header (barra superior)
+// Alinear logo, menú, buscador e inicio de sesión en una sola línea en desktop
+@media (min-width: 768px) {
+  /* Integrar ds-header y ds-navbar en una sola franja */
+  #header-navbar-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  #header-navbar-wrapper ds-header,
+  #header-navbar-wrapper ds-navbar {
+    flex: 0 0 auto;
+  }
+  #header-navbar-wrapper ds-navbar {
+    flex: 1 1 auto;
+  }
+  #header-navbar-wrapper nav#desktop-navbar {
+    background: transparent;
+    border: 0;
+  }
+  .ds-header .navbar {
+    flex-wrap: nowrap;
+  }
+  .ds-header .navbar .navbar-brand {
+    flex: 0 0 auto;
+    margin-right: 1rem;
+  }
+  .ds-header .navbar .navbar-collapse {
+    display: flex !important;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .ds-header .navbar .navbar-nav {
+    flex-direction: row;
+    align-items: center;
+  }
+  .ds-header .navbar .navbar-nav .nav-link {
+    padding-left: .75rem;
+    padding-right: .75rem;
+  }
+}
+
+// ---------------------------
+// Barra lateral (sidebar)
+// Fondo blanco y estilo acorde al theme custom
+.row-with-sidebar .sidebar-content {
+  background-color: var(--uam-white);
+  border: 1px solid var(--bs-card-border-color, #dee2e6);
+  border-radius: .5rem;
+  padding: var(--bs-spacer);
+}
+
+// Ajustes para secciones/configuraciones dentro del sidebar
+#search-sidebar-content, .setting-option {
+  background-color: var(--uam-white);
+}
+
+// ---------------------------
+// Portada/Home: imagen de fondo institucional
+.home-news-content {
+  background: linear-gradient(0deg, rgba(0, 114, 206, 0.15), rgba(0, 114, 206, 0.15)),
+              url('assets/images/fondo-uam.png') center/cover no-repeat;
+  border-radius: .5rem;
+}
+
+// Admin: barra lateral blanca
+nav#admin-sidebar,
+nav#admin-sidebar .sidebar-full-width-container {
+  background-color: var(--uam-white) !important;
+}
+nav#admin-sidebar {
+  border-right: 1px solid var(--bs-card-border-color, #dee2e6);
+}
+
+// Ajustar tamaño del logo en el header para mejor alineación
+.ds-header .navbar-brand img,
+.ds-header .navbar-brand svg {
+  max-height: var(--ds-header-logo-height, 48px);
+  height: var(--ds-header-logo-height, 48px);
+  width: auto;
+}
