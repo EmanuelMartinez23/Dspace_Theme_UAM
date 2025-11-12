@@ -1,8 +1,35 @@
 // Override or add CSS variables for your theme here
 
 :root {
-  //--ds-header-logo-height: 80px;
-  //--ds-header-logo-height-xs: 50px;
-  //--ds-header-icon-color: #{$link-color};
-  //--ds-header-icon-color-hover: #{darken($link-color, 15%)};
+  // Paleta UAM expuesta como CSS variables para fácil reuso en componentes
+  --uam-azcapotzalco: #CD032E;
+  --uam-cuajimalpa: #F08200;
+  --uam-iztapalapa: #57A519;
+  --uam-lerma: #AD25A8;
+  --uam-xochimilco: #0072CE;
+
+  --uam-black: #000000;
+  --uam-white: #ffffff;
+  --uam-gray-900: #212529;
+  --uam-gray-700: #495057;
+  --uam-gray-100: #f8f9fa;
+
+  // Variables de theme DSpace comunes
+  --ds-primary: #{$primary};
+  --ds-secondary: #{$secondary};
+  --ds-success: #{$success};
+  --ds-info: #{$info};
+  --ds-warning: #{$warning};
+  --ds-danger: #{$danger};
+  --ds-light: #{$light};
+  --ds-dark: #{$dark};
+
+  // Header/Footer básicos para teñir la interfaz sin tocar lógica
+  --ds-header-bg: var(--ds-primary);
+  --ds-header-color: var(--uam-white);
+  --ds-header-icon-color: #{$link-color};
+  --ds-header-icon-color-hover: #{darken($link-color, 15%)};
+
+  --ds-footer-bg: var(--ds-dark);
+  --ds-footer-color: var(--uam-white);
 }

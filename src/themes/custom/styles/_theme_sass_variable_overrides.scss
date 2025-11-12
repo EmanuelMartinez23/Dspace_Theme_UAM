@@ -28,6 +28,43 @@
 
 // Add new semantic colors here (you don't need to add existing semantic colors)
 @import '../../../styles/_variables.scss';
+
+// Paleta UAM (unidades)
+$uam-azcapotzalco: #CD032E; // rojo
+$uam-cuajimalpa:   #F08200; // naranja
+$uam-iztapalapa:   #57A519; // verde
+$uam-lerma:        #AD25A8; // morado
+$uam-xochimilco:   #0072CE; // azul
+
+// Neutros
+$uam-black: #000000;
+$uam-white: #ffffff;
+$uam-gray-900: #212529;
+$uam-gray-700: #495057;
+$uam-gray-100: #f8f9fa;
+
+// Mapear a colores semánticos Bootstrap
+// Elegimos azul UAM como primario general del theme
+$primary:   $uam-xochimilco !default;
+$secondary: $uam-gray-700 !default;
+$success:   $uam-iztapalapa !default;
+$info:      $uam-lerma !default;
+$warning:   $uam-cuajimalpa !default;
+$danger:    $uam-azcapotzalco !default;
+$light:     $uam-gray-100 !default;
+$dark:      $uam-gray-900 !default;
+
+// Links
+$link-color: $primary !default;
+
+// Extender mapa de colores (por si se usan utilidades de Bootstrap con nombres personalizados)
 $theme-custom-semantic-colors: (
+  "uam-azcapotzalco": $uam-azcapotzalco,
+  "uam-cuajimalpa": $uam-cuajimalpa,
+  "uam-iztapalapa": $uam-iztapalapa,
+  "uam-lerma": $uam-lerma,
+  "uam-xochimilco": $uam-xochimilco,
+  "black": $uam-black,
+  "white": $uam-white
 );
 $theme-colors: map-merge($theme-colors, $theme-custom-semantic-colors);

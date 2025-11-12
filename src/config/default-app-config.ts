@@ -418,6 +418,11 @@ export class DefaultAppConfig implements AppConfig {
     // },
 
     {
+      // UAM: usar el theme "custom" por defecto para toda la UI
+      // Un theme con solo "name" hace match con todas las rutas
+      name: 'custom',
+    },
+    {
       // The default dspace theme
       name: 'dspace',
       // Whenever this theme is active, the following tags will be injected into the <head> of the page.

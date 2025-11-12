@@ -2,3 +2,47 @@
 
 // imports the base global style
 @import '../../../styles/_global-styles.scss';
+
+// Utilidades de color por Unidad UAM
+.bg-uam-azcapotzalco { background-color: var(--uam-azcapotzalco) !important; }
+.bg-uam-cuajimalpa   { background-color: var(--uam-cuajimalpa) !important; }
+.bg-uam-iztapalapa   { background-color: var(--uam-iztapalapa) !important; }
+.bg-uam-lerma        { background-color: var(--uam-lerma) !important; }
+.bg-uam-xochimilco   { background-color: var(--uam-xochimilco) !important; }
+
+.text-uam-azcapotzalco { color: var(--uam-azcapotzalco) !important; }
+.text-uam-cuajimalpa   { color: var(--uam-cuajimalpa) !important; }
+.text-uam-iztapalapa   { color: var(--uam-iztapalapa) !important; }
+.text-uam-lerma        { color: var(--uam-lerma) !important; }
+.text-uam-xochimilco   { color: var(--uam-xochimilco) !important; }
+
+.border-uam-azcapotzalco { border-color: var(--uam-azcapotzalco) !important; }
+.border-uam-cuajimalpa   { border-color: var(--uam-cuajimalpa) !important; }
+.border-uam-iztapalapa   { border-color: var(--uam-iztapalapa) !important; }
+.border-uam-lerma        { border-color: var(--uam-lerma) !important; }
+.border-uam-xochimilco   { border-color: var(--uam-xochimilco) !important; }
+
+// Header/Footer mínimos usando variables definidas
+header, .ds-header {
+  background-color: var(--ds-header-bg);
+  color: var(--ds-header-color);
+}
+
+footer, .ds-footer {
+  background-color: var(--ds-footer-bg);
+  color: var(--ds-footer-color);
+}
+
+// Botones principales con el primario UAM
+.btn-primary {
+  background-color: var(--ds-primary);
+  border-color: var(--ds-primary);
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  filter: brightness(0.9);
+}
+
+// Enlaces
+a { color: $link-color; }
+a:hover { color: darken($link-color, 10%); }
