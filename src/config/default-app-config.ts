@@ -424,7 +424,7 @@ export class DefaultAppConfig implements AppConfig {
     },
     {
       // The default dspace theme
-      name: 'dspace',
+      name: 'custom',
       // Whenever this theme is active, the following tags will be injected into the <head> of the page.
       // Example use case: set the favicon based on the active theme.
       headTags: [
