@@ -32,21 +32,5 @@
 
   --ds-footer-bg: var(--ds-dark);
   --ds-footer-color: var(--uam-white);
-
-  // Integración de header + navbar en una sola franja
-  // Eliminar borde inferior del navbar del header y ajustes del navbar expandible
-  --ds-header-navbar-border-bottom-height: 0;
-  --ds-expandable-navbar-border-top-color: transparent;
-  --ds-expandable-navbar-border-top-height: 0;
-  --ds-expandable-navbar-padding-top: 0;
-
-  // Altura recomendada del header y logo
-  @include media-breakpoint-up(md) {
-    --ds-header-logo-height: 48px;
-    --ds-header-height: 80px;
-  }
-  @include media-breakpoint-down(sm) {
-    --ds-header-logo-height: 44px;
-    --ds-header-height: 84px;
-  }
 }
+
